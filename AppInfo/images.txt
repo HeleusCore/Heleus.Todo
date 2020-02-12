@@ -1,0 +1,11 @@
+//stickynote.png => Platforms/iOS/Resources/icons/stickynote.png ; blend 25x25 25x25;
+//stickynote.png => Platforms/iOS/Resources/icons/stickynote@2x.png ; blend 50x50 50x50;
+//stickynote.png => Platforms/iOS/Resources/icons/stickynote@3x.png ; blend 75x75 75x75;
+
+//plus.png => Platforms/iOS/Resources/icons/plus.png ; blend 25x25 25x25;
+//plus.png => Platforms/iOS/Resources/icons/plus@2x.png ; blend 50x50 50x50;
+//plus.png => Platforms/iOS/Resources/icons/plus@3x.png ; blend 75x75 75x75;
+
+//sliders.png => Platforms/iOS/Resources/icons/sliders.png ; blend 25x25 25x25;
+//sliders.png => Platforms/iOS/Resources/icons/sliders@2x.png ; blend 50x50 50x50;
+//sliders.png => Platforms/iOS/Resources/icons/sliders@3x.png ; blend 75x75 75x75;

@@ -1,0 +1,12 @@
+{
+  "fullname": "Heleus Todo",
+  "name": "Todo",
+  "description": "Your collaborative task manager.",
+  "developer": "Heleus Core",
+  "domain": "heleuscore.com",
+  "link": "https://heleuscore.com/todo/",
+  "package": "com.heleuscore.todo",
+  
+  "primarycolor":"255,155,5",
+  "secondarycolor":"180,90,45"
+}

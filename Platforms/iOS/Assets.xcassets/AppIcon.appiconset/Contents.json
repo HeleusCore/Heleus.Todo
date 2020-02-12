@@ -1,0 +1,215 @@
+{
+  "images": [
+    {
+      "filename": "icon_40.png",
+      "size": "20x20",
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_60.png",
+      "size": "20x20",
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_58.png",
+      "size": "29x29",
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_87.png",
+      "size": "29x29",
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_80.png",
+      "size": "40x40",
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_120.png",
+      "size": "40x40",
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_120.png",
+      "size": "60x60",
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_180.png",
+      "size": "60x60",
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "filename": "icon_20.png",
+      "size": "20x20",
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_40.png",
+      "size": "20x20",
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_29.png",
+      "size": "29x29",
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_58.png",
+      "size": "29x29",
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_40.png",
+      "size": "40x40",
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_80.png",
+      "size": "40x40",
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_167.png",
+      "size": "83.5x83.5",
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_76.png",
+      "size": "76x76",
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_152.png",
+      "size": "76x76",
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "filename": "icon_1024.png",
+      "size": "1024x1024",
+      "scale": "1x",
+      "idiom": "ios-marketing"
+    },
+    {
+      "filename": "icon_120.png",
+      "size": "60x60",
+      "scale": "2x",
+      "idiom": "car"
+    },
+    {
+      "filename": "icon_180.png",
+      "size": "60x60",
+      "scale": "3x",
+      "idiom": "car"
+    },
+    {
+      "role": "notificationCenter",
+      "filename": "icon_48.png",
+      "size": "24x24",
+      "subtype": "38mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "notificationCenter",
+      "filename": "icon_55.png",
+      "size": "27.5x27.5",
+      "subtype": "42mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "companionSettings",
+      "filename": "icon_58.png",
+      "size": "29x29",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "companionSettings",
+      "filename": "icon_87.png",
+      "size": "29x29",
+      "scale": "3x",
+      "idiom": "watch"
+    },
+    {
+      "role": "appLauncher",
+      "filename": "icon_80.png",
+      "size": "40x40",
+      "subtype": "38mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "appLauncher",
+      "filename": "icon_88.png",
+      "size": "44x44",
+      "subtype": "40mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "appLauncher",
+      "filename": "icon_100.png",
+      "size": "50x50",
+      "subtype": "44mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "quickLook",
+      "filename": "icon_172.png",
+      "size": "86x86",
+      "subtype": "38mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "quickLook",
+      "filename": "icon_196.png",
+      "size": "98x98",
+      "subtype": "42mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "role": "quickLook",
+      "filename": "icon_216.png",
+      "size": "108x108",
+      "subtype": "44mm",
+      "scale": "2x",
+      "idiom": "watch"
+    },
+    {
+      "filename": "icon_1024.png",
+      "size": "1024x1024",
+      "scale": "1x",
+      "idiom": "watch-marketing"
+    }
+  ],
+  "info": {
+    "version": 1,
+    "author": "xcode"
+  },
+  "properties": {
+    "pre-rendered": true
+  }
+}

@@ -1,0 +1,175 @@
+﻿App.Name: Todo
+App.FullName: Heleus Todo
+App.Developer: Heleus Core
+App.Description: Your collaborative task manager
+App.Link: https://heleuscore.com/todo/
+App.Version: 0.1.0 (build 1)
+App.Scheme: heleustodo
+
+Common.MyTodoList: My Todo List
+
+Messages.ConfirmAddGroup: Do you want to create a new todo list?
+
+MenuPage.TodoLists: Todo Lists
+MenuPage.NewTodoList: New Todo List
+MenuPage.NewTask: New Task
+
+
+## PAGES
+#
+
+TodoPage.Title: Heleus Todo
+TodoPage.Info: Thank your for using {0}. Plan and organize all your personal tasks accross all your devices in an easy and fast way. Or organize your family or work with other people with the help of our collaborative features.\n\nNever forget something important again. Just use {0}.
+TodoPage.RecentTasks: Recent Tasks
+TodoPage.NewTask: Add New Task
+TodoPage.TodoLists: Available Todo Lists
+TodoPage.NewTodoList: Add New Todo List
+TodoPage.DifferentSecretKeyConfirm: The secret keys are different. Therefore, the decryption will probably not work. Do you still want to continue?
+
+NewTodoListPage.Title: New Todo List
+NewTodoListPage.Submit: Add New Todo List
+NewTodoListPage.Success: New todo list added.
+NewTodoListPage.Confirm: Do you really want to add a new todo list?
+
+TodoListPage.Title: Todo List
+TodoListPage.OpenTasks: Tasks
+TodoListPage.NoOpenTasks: No tasks available.
+TodoListPage.More: More
+TodoListPage.Edit: Edit Todo List
+TodoListPage.Reload: Reload Todo List
+TodoListPage.ClosedTasks: Completed Tasks
+TodoListPage.NoClosedTasks: No complated tasks available.
+TodoListPage.NameHeader: Chage Todo List Name
+TodoListPage.Name: Todo List Name
+TodoListPage.NameButton: Update Todo List Name
+TodoListPage.ConfirmName: Do you want to update the todo list name?
+TodoListPage.SuccessName: The todo list name was updated.
+TodoListPage.UsersSection: Users
+TodoListPage.ViewUsers: View Users
+TodoListPage.Invite: Invite User
+TodoListPage.DeleteHeader: Delete Todo List
+TodoListPage.DeleteButton: Delete Todo List
+TodoListPage.ConfirmDelete: Do you really want to delete this todo list?
+TodoListPage.SuccessDelete: The todo list was deleted.
+
+AddTodoTaskPage.Title: Add New Task
+AddTodoTaskPage.TodoList: Select Todo List
+AddTodoTaskPage.ListStatus: - Select a todo list for this task
+AddTodoTaskPage.Text: The Task
+AddTodoTaskPage.TextStatus: - Type a valid task text  
+AddTodoTaskPage.SubmitAccountStatus: - Select a valid submission account
+AddTodoTaskPage.Submit: Add New Task
+AddTodoTaskPage.Confirm: Do you want to add this new task?
+AddTodoTaskPage.Success: The new task was added to the todo list.
+
+
+TodoTaskPage.Title: Task
+TodoTaskPage.StatusHeader: Tasks Status
+TodoTaskPage.SubmitStatus: Change Tasks Status
+TodoTaskPage.ConfirmStatus: Do you want to change the status of this task?
+TodoTaskPage.StatusSuccess: The status of this task was changed.
+TodoTaskPage.ItemHeader: Task Text
+TodoTaskPage.Text: Task Text
+TodoTaskPage.SubmitText: Update Task Text
+TodoTaskPage.ConfirmText: Do you really want to update the task text?
+TodoTaskPage.TextSuccess: The task text was updated.
+TodoTaskPage.HistoryHeader: Task History
+TodoTaskPage.TransactionInfo: Transaction Info
+TodoTaskPage.SecretKeyInfo: Secret Key Info
+TodoTaskPage.DeleteHeader: Delete Task
+TodoTaskPage.ConirmDelete: Do you really want to delete this task?
+TodoTaskPage.StatusDelete: The task was deleted.
+TodoTaskPage.SubmitDelete: Delete Task
+
+
+TodoListUsersPage.Title: Todo List Users
+TodoListUsersPage.DownloadFailed: .HandleInvitationPage.DownloadError 
+TodoListUsersPage.ActiveUsers: Active Users 
+TodoListUsersPage.PendingUsers: Pending Users 
+TodoListUsersPage.Invite: Invite New User 
+TodoListUsersPage.InviteButton: Invite New User 
+TodoListUsersPage.Profile: View Profile
+TodoListUsersPage.Remove: Remove User
+TodoListUsersPage.Reinvite: Re-Invite User
+TodoListUsersPage.DeleteConfirm: Do you really want to remove the user from this todo list?
+TodoListUsersPage.DeleteSuccess: The user was removed from the todo list.
+
+
+RequestInvitationPage.Title: Request List Invitation
+RequestInvitationPage.ServiceAccount: Account
+RequestInvitationPage.Id: Your Account Id: {0}
+RequestInvitationPage.Info: You can share your todo lists with other users, like family members, friends or co-workers. You need to know their account id, if you want to add them to one of your todo lists. Or they need your account id, if they want to add you to a todo list.\n\nIf you want to add someone to one of your todo lists, request their account id or the request code. If someone wants to add you to a todo list, share your account id or the request code with this person.
+RequestInvitationPage.Request: Request Code
+RequestInvitationPage.Copy: Copy to Clipboard
+RequestInvitationPage.Share: Share Request Code
+
+
+InvitationPage.Title: Invite User 
+InvitationPage.NoLists: No todo lists available.
+InvitationPage.List: Select Todo List
+InvitationPage.ListStatus: - Select a todo list
+InvitationPage.AccountId: Account Id
+InvitationPage.Profile: View User Profile
+InvitationPage.AccountStatus: - Type a valid account id
+InvitationPage.Submit: Send Invitation
+InvitationPage.Password: - Request Password
+InvitationPage.PasswordStatus: - Set a password for this request (optional)
+InvitationPage.SubmitAccountStatus: .AddTodoTaskPage.SubmitAccountStatus
+
+
+ListInvitationResultPage.Title: Invitation Request Code
+ListInvitationResultPage.RequestCode: Request Code
+ListInvitationResultPage.Info: You invited a user to your todo list. Now, the user must accept this invitation. Share the invitation request code with him to finish the invitation process.
+ListInvitationResultPage.Copy: Copy Request Code to Clipboard
+ListInvitationResultPage.Share: Share Request Code
+
+
+HandleInvitationPage.Title: List Invitation
+HandleInvitationPage.DownloadError: Downloading data failed. Please try again later.
+HandleInvitationPage.GroupNotFound: The todo list is not available.
+HandleInvitationPage.InvalidSharedSecret: The shared secret is wrong.
+HandleInvitationPage.Profile: View Sender Profile
+HandleInvitationPage.Submit: Accept Invitation
+HandleInvitationPage.SubmitConfirm: Do you want to accept the list invitation?
+HandleInvitationPage.Success: You successfully joined the todo list.
+
+## Views
+#
+
+TodoUserView.State: State
+TodoUserView.Active: Active
+TodoUserView.Pending: Pending
+TodoUserView.AccountId: Account Id
+
+TodoListView.MoreTitle: List
+TodoListView.EditList: Edit List
+TodoListView.NewItem: New Task
+TodoListView.Invitation: Invite User
+TodoListView.ItemTitle: Task
+TodoListView.EditItem: View Task
+TodoListView.MarkDone: Mark Task as Done
+TodoListView.ConfirmStatus: Do you want to mark this task as done?
+TodoListView.Add: New Task
+
+TodoHistoryView.Item: Task Updated
+TodoHistoryView.Status: Status Changed
+TodoHistoryView.Timestamp: Date 
+
+TodoListSecretErrorView.Import: Import Shared Secret
+TodoListSecretErrorView.ImportInfo: Can't decrypt the todo list. The shared secret for this todo list is missing.
+
+TodoErrorView.Retry: Retry
+TodoErrorView.RetryInfo: Couldn't download/update the todo lists. Please try again.
+
+InvitationView.Name: Todo List
+InvitationView.AccountId: Sender Account Id
+
+## Enums
+ItemStatusTypes.Open: Active
+ItemStatusTypes.Closed: Done
+
+ServiceUserCodes: Service error: {0} (Code {1}).
+ServiceUserCodes.None: Ok
+ServiceUserCodes.InvalidTransaction: Invalid transaction
+
+##

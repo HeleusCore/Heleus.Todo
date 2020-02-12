@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\Heleus.AppBase\Base\Shared.Android\Shared.Android.projitems" Label="Shared" Condition="Exists('..\..\..\Heleus.AppBase\Base\Shared.Android\Shared.Android.projitems')" />
+  <Import Project="..\..\..\Heleus.AppBase\Base\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\..\..\Heleus.AppBase\Base\Shared\Shared.projitems')" />
+  <Import Project="..\..\App\Todo.App.projitems" Label="Shared" Condition="Exists('..\..\App\Todo.App.projitems')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A4B07EB-ADAF-4E5F-9A6B-541BF4788EBE}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Heleus.Apps.Shared.Android</RootNamespace>
+    <AssemblyName>Heleus Todo</AssemblyName>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+<AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+<AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AotAssemblies>True</AotAssemblies>
+    <EnableLLVM>True</EnableLLVM>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+<AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+<AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Firebase.Messaging">
+      <Version>71.1740.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.68.1.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values-v21\Styles.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\notification.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\notification.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\notification.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\notification.png" />
+    <AndroidResource Include="Resources\drawable\Transparent.png" />
+    <AndroidResource Include="Resources\drawable\splash_centered.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\heleus.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\heleus.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\heleus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\heleus.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon_background.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon_background.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon_background.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon_background.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidEnvironment Include="environment.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\..\..\Heleus.AppBase\Fonts\fa-brands-400.ttf">
+      <Link>Assets\fa-brands-400.ttf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\Heleus.AppBase\Fonts\fa-light-300.ttf">
+      <Link>Assets\fa-light-300.ttf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\Heleus.AppBase\Fonts\fa-regular-400.ttf">
+      <Link>Assets\fa-regular-400.ttf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\Heleus.AppBase\Fonts\fa-solid-900.ttf">
+      <Link>Assets\fa-solid-900.ttf</Link>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Heleus.Base\Heleus.Base.csproj">
+      <Project>{74862847-A7F2-47AE-9BE4-1CC81943DDFE}</Project>
+      <Name>Heleus.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Heleus.Services\ProfileServiceBase\Heleus.ProfileServiceBase.csproj">
+      <Project>{F2739350-AB5A-4E12-AEC6-215413F2FCBB}</Project>
+      <Name>Heleus.ProfileServiceBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Heleus.Services\TodoServiceBase\Heleus.TodoServiceBase.csproj">
+      <Project>{18DB3CCD-15EE-4960-ABE7-C7E0CA978635}</Project>
+      <Name>Heleus.TodoServiceBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

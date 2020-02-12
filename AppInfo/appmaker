@@ -1,0 +1,14 @@
+#!/bin/bash
+
+infodir="$( cd "$( dirname "$0" )" && pwd )"
+cd $infodir
+
+cd ..
+targetdir="$( cd "$( dirname "$0" )" && pwd )"
+
+cd ..
+cd Heleus.AppBase
+cd AppBuilder
+dotnet run $1 $targetdir
+
+cd $infodir

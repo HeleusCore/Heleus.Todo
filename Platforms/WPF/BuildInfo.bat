@@ -1,0 +1,3 @@
+SET _SHORTNAME=Todo
+SET _EXEC=todo
+SET _VERSION="0.1.0"

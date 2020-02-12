@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Xamarin.Forms.4.4.0.991640\build\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.4.4.0.991640\build\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{8018FCC4-EE12-48AB-B1A9-AA82724F67B7}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Heleus.Apps.Shared.iOS</RootNamespace>
+    <AssemblyName>Heleus Todo</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>36944</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>39345</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\packages\SkiaSharp.1.68.1.1\lib\Xamarin.iOS\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.iOS">
+      <HintPath>..\..\packages\SkiaSharp.Views.1.68.1.1\lib\Xamarin.iOS\SkiaSharp.Views.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\packages\Xamarin.Forms.4.4.0.991640\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\packages\Xamarin.Forms.4.4.0.991640\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\..\packages\Xamarin.Forms.4.4.0.991640\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\packages\Xamarin.Forms.4.4.0.991640\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Forms">
+      <HintPath>..\..\packages\SkiaSharp.Views.Forms.1.68.1.1\lib\Xamarin.iOS\SkiaSharp.Views.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_48.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_55.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_88.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_172.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_196.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_100.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="ITunesArtwork" />
+    <None Include="ITunesArtwork%402x" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="UIApp.iOS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Transparent.png" />
+    <BundleResource Include="Resources\Sounds\aur.m4r" />
+    <BundleResource Include="Resources\Sounds\bam.m4r" />
+    <BundleResource Include="Resources\Sounds\bel.caf" />
+    <BundleResource Include="Resources\Sounds\boi.caf" />
+    <BundleResource Include="Resources\Sounds\cho.m4r" />
+    <BundleResource Include="Resources\Sounds\cir.m4r" />
+    <BundleResource Include="Resources\Sounds\com.m4r" />
+    <BundleResource Include="Resources\Sounds\tri.caf" />
+    <BundleResource Include="Resources\Sounds\xyl.caf" />
+    <BundleResource Include="Resources\Sounds\gla.caf" />
+    <BundleResource Include="Resources\Sounds\har.caf" />
+    <BundleResource Include="Resources\Sounds\hel.m4r" />
+    <BundleResource Include="Resources\Sounds\inp.m4r" />
+    <BundleResource Include="Resources\Sounds\key.m4r" />
+    <BundleResource Include="Resources\Sounds\nil.caf" />
+    <BundleResource Include="Resources\Sounds\not.m4r" />
+    <BundleResource Include="Resources\Sounds\pop.m4r" />
+    <BundleResource Include="Resources\Sounds\pul.m4r" />
+    <BundleResource Include="Resources\Sounds\syn.m4r" />
+    <BundleResource Include="Resources\Sounds\tim.caf" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo%402x.png" />
+    <BundleResource Include="Resources\logo%403x.png" />
+    <BundleResource Include="..\..\..\Heleus.AppBase\Fonts\fa-brands-400.ttf">
+      <Link>Resources\fa-brands-400.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\Heleus.AppBase\Fonts\fa-light-300.ttf">
+      <Link>Resources\fa-light-300.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\Heleus.AppBase\Fonts\fa-regular-400.ttf">
+      <Link>Resources\fa-regular-400.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\Heleus.AppBase\Fonts\fa-solid-900.ttf">
+      <Link>Resources\fa-solid-900.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\heleus.png" />
+    <BundleResource Include="Resources\heleus%402x.png" />
+    <BundleResource Include="Resources\heleus%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Heleus.Base\Heleus.Base.csproj">
+      <Project>{74862847-A7F2-47AE-9BE4-1CC81943DDFE}</Project>
+      <Name>Heleus.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Heleus.Services\ProfileServiceBase\Heleus.ProfileServiceBase.csproj">
+      <Project>{F2739350-AB5A-4E12-AEC6-215413F2FCBB}</Project>
+      <Name>Heleus.ProfileServiceBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Heleus.Services\TodoServiceBase\Heleus.TodoServiceBase.csproj">
+      <Project>{18DB3CCD-15EE-4960-ABE7-C7E0CA978635}</Project>
+      <Name>Heleus.TodoServiceBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\..\..\Heleus.AppBase\Base\Shared.iOS\Shared.iOS.projitems" Label="Shared" Condition="Exists('..\..\..\Heleus.AppBase\Base\Shared.iOS\Shared.iOS.projitems')" />
+  <Import Project="..\..\..\Heleus.AppBase\Base\Shared.Apple\Shared.Apple.projitems" Label="Shared" Condition="Exists('..\..\..\Heleus.AppBase\Base\Shared.Apple\Shared.Apple.projitems')" />
+  <Import Project="..\..\..\Heleus.AppBase\Base\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\..\..\Heleus.AppBase\Base\Shared\Shared.projitems')" />
+  <Import Project="..\..\App\Todo.App.projitems" Label="Shared" Condition="Exists('..\..\App\Todo.App.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.4.4.0.991640\build\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.4.4.0.991640\build\Xamarin.Forms.targets')" />
+</Project>

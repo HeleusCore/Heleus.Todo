@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="AccentColor">#FF9B05</color>
+    <color name="BaseStartColor">#FF9B05</color>
+    <color name="BaseEndColor">#B45A2D</color>
+
+    <color name="BarBackgroundColor">#34000000</color>
+
+    <color name="NavigationBarColor">#FFFFFF</color>
+
+    <style name="SplashTheme" parent="Theme.AppCompat">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">0dp</item>
+        <item name="android:colorBackground">@color/BaseEndColor</item>
+        <item name="android:windowBackground">@drawable/splash_centered</item>
+
+        <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+
+        <item name="colorPrimary">@color/BaseEndColor</item>
+        <item name="colorPrimaryDark">@color/BaseEndColor</item>
+        <item name="colorAccent">@color/AccentColor</item>
+    </style>
+    
+    <style name="MyTheme" parent="MyTheme.Base">
+    </style>
+
+    <style name="MyTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+        <item name="windowNoTitle">true</item>
+        <!--We will be using the toolbar so no need to show ActionBar-->
+        <item name="windowActionBar">false</item>
+        <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/BaseEndColor</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/BaseEndColor</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+        <item name="colorAccent">@color/AccentColor</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+    </style>
+    
+    <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/AccentColor</item>
+    </style>
+    
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/NavigationBarColor</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/NavigationBarColor</item>
+        <item name="android:textColorPrimary">@color/NavigationBarColor</item>
+        <item name="android:textColorSecondary">@color/NavigationBarColor</item>
+        <item name="actionMenuTextColor">@color/NavigationBarColor</item>
+        <item name="android:textColor">@color/NavigationBarColor</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>
