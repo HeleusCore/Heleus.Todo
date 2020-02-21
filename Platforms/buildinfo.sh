@@ -2,5 +2,5 @@
 
 _NAME="Heleus Todo"
 _SHORTNAME="Todo"
-_EXEC="todo"
+_EXEC="HeleusTodo"
 _VERSION="0.1.0"
